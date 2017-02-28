@@ -3,10 +3,12 @@
 </head>
 <body>
 <h1>Leaderboard</h1>
+<p>{{> loginButtons}}</p>
 {{> leaderboard}}
 </body>
 
 <template name="leaderboard">
+  {{#if currentUser}}
   {{> addPlayerForm}}
   <ul>
     {{#each player}}
@@ -21,6 +23,9 @@
     </li>
     {{/if}}
   </ul>
+  {{else}}
+  <p>You must be logged-in to see this content.</p>
+  {{/if}}
 </template>
 
 <template name="addPlayerForm">
