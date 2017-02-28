@@ -1,21 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
-@mary-pascual
-Sign out
-Watch 2
-Star 4
-Fork 6 realdavidturnbull/leaderboard-v4
-Code  Issues 3  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
-Tree: 7b28d22ad0 Find file Copy pathleaderboard-v4/leaderboard.js
-7b28d22  on Apr 8, 2016
-dturnbull 12 - Methods
-0 contributors
-RawBlameHistory
-88 lines (83 sloc)  2.87 KB
 PlayersList = new Mongo.Collection('players');
 
 if(Meteor.isClient){
@@ -104,5 +86,3 @@ Meteor.methods({
     }
   }
 });
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help
