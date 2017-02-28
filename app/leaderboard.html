@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Leaderboard</title>
 </head>
 <body>
-
+<h1>Leaderboard</h1>
+{{> leaderboard}}
 </body>
-</html>
+
+<template name="leaderboard">
+  <ul>
+    {{#each player}}
+    <li class="player {{selectedClass}}">{{name}}: {{score}}</li>
+    {{/each}}
+  </ul>
+</template>
